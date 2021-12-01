@@ -1,4 +1,4 @@
-import react from "react";
+
 import "./BusinessList.css";
 import Business from "../Business/Business";
 import React from "react";
@@ -10,7 +10,7 @@ class BusinessList extends React.Component {
         {
           this.props.businesses.map(business => {
 
-            return <Business business={business}/>;
+            return <Business business={business} key={business.id}/>;
 
           })
         }
